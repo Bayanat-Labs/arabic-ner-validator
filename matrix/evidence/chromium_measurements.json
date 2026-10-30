@@ -1,0 +1,366 @@
+{
+ "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+ "probes": [
+  {
+   "probe_id": "p01",
+   "js_string": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "code_points_before_start": 16,
+   "intl_segmenter": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "normalised_length": {
+    "NFC": 22,
+    "NFKC": 22
+   }
+  },
+  {
+   "probe_id": "p02",
+   "js_string": {
+    "start": 17,
+    "end": 25,
+    "length": 30
+   },
+   "code_points_before_start": 17,
+   "intl_segmenter": {
+    "start": 15,
+    "end": 19,
+    "length": 23
+   },
+   "normalised_length": {
+    "NFC": 30,
+    "NFKC": 30
+   }
+  },
+  {
+   "probe_id": "p03",
+   "js_string": {
+    "start": 10,
+    "end": 19,
+    "length": 28
+   },
+   "code_points_before_start": 10,
+   "intl_segmenter": {
+    "start": 10,
+    "end": 19,
+    "length": 28
+   },
+   "normalised_length": {
+    "NFC": 28,
+    "NFKC": 28
+   }
+  },
+  {
+   "probe_id": "p04",
+   "js_string": {
+    "start": 13,
+    "end": 16,
+    "length": 16
+   },
+   "code_points_before_start": 12,
+   "intl_segmenter": {
+    "start": 12,
+    "end": 15,
+    "length": 15
+   },
+   "normalised_length": {
+    "NFC": 15,
+    "NFKC": 15
+   }
+  },
+  {
+   "probe_id": "p05",
+   "js_string": {
+    "start": 18,
+    "end": 25,
+    "length": 25
+   },
+   "code_points_before_start": 15,
+   "intl_segmenter": {
+    "start": 11,
+    "end": 18,
+    "length": 18
+   },
+   "normalised_length": {
+    "NFC": 22,
+    "NFKC": 22
+   }
+  },
+  {
+   "probe_id": "p06",
+   "js_string": {
+    "start": 15,
+    "end": 20,
+    "length": 26
+   },
+   "code_points_before_start": 15,
+   "intl_segmenter": {
+    "start": 14,
+    "end": 19,
+    "length": 25
+   },
+   "normalised_length": {
+    "NFC": 26,
+    "NFKC": 26
+   }
+  },
+  {
+   "probe_id": "p07",
+   "js_string": {
+    "start": 17,
+    "end": 23,
+    "length": 23
+   },
+   "code_points_before_start": 17,
+   "intl_segmenter": {
+    "start": 17,
+    "end": 23,
+    "length": 23
+   },
+   "normalised_length": {
+    "NFC": 23,
+    "NFKC": 23
+   }
+  },
+  {
+   "probe_id": "p08",
+   "js_string": {
+    "start": 17,
+    "end": 21,
+    "length": 21
+   },
+   "code_points_before_start": 17,
+   "intl_segmenter": {
+    "start": 17,
+    "end": 21,
+    "length": 21
+   },
+   "normalised_length": {
+    "NFC": 21,
+    "NFKC": 21
+   }
+  },
+  {
+   "probe_id": "p09",
+   "js_string": {
+    "start": 19,
+    "end": 24,
+    "length": 24
+   },
+   "code_points_before_start": 19,
+   "intl_segmenter": {
+    "start": 18,
+    "end": 22,
+    "length": 22
+   },
+   "normalised_length": {
+    "NFC": 24,
+    "NFKC": 24
+   }
+  },
+  {
+   "probe_id": "p10",
+   "js_string": {
+    "start": 17,
+    "end": 24,
+    "length": 24
+   },
+   "code_points_before_start": 17,
+   "intl_segmenter": {
+    "start": 17,
+    "end": 24,
+    "length": 24
+   },
+   "normalised_length": {
+    "NFC": 24,
+    "NFKC": 25
+   }
+  },
+  {
+   "probe_id": "p11",
+   "js_string": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "code_points_before_start": 16,
+   "intl_segmenter": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "normalised_length": {
+    "NFC": 22,
+    "NFKC": 25
+   }
+  },
+  {
+   "probe_id": "p12",
+   "js_string": {
+    "start": 15,
+    "end": 22,
+    "length": 22
+   },
+   "code_points_before_start": 15,
+   "intl_segmenter": {
+    "start": 14,
+    "end": 21,
+    "length": 21
+   },
+   "normalised_length": {
+    "NFC": 21,
+    "NFKC": 21
+   }
+  },
+  {
+   "probe_id": "p13",
+   "js_string": {
+    "start": 17,
+    "end": 21,
+    "length": 29
+   },
+   "code_points_before_start": 17,
+   "intl_segmenter": {
+    "start": 17,
+    "end": 21,
+    "length": 29
+   },
+   "normalised_length": {
+    "NFC": 29,
+    "NFKC": 29
+   }
+  },
+  {
+   "probe_id": "p14",
+   "js_string": {
+    "start": 11,
+    "end": 20,
+    "length": 35
+   },
+   "code_points_before_start": 11,
+   "intl_segmenter": {
+    "start": 11,
+    "end": 20,
+    "length": 35
+   },
+   "normalised_length": {
+    "NFC": 35,
+    "NFKC": 35
+   }
+  },
+  {
+   "probe_id": "p15",
+   "js_string": {
+    "start": 19,
+    "end": 22,
+    "length": 32
+   },
+   "code_points_before_start": 19,
+   "intl_segmenter": {
+    "start": 19,
+    "end": 22,
+    "length": 32
+   },
+   "normalised_length": {
+    "NFC": 32,
+    "NFKC": 32
+   }
+  },
+  {
+   "probe_id": "p16",
+   "js_string": {
+    "start": 13,
+    "end": 19,
+    "length": 19
+   },
+   "code_points_before_start": 13,
+   "intl_segmenter": {
+    "start": 13,
+    "end": 19,
+    "length": 19
+   },
+   "normalised_length": {
+    "NFC": 19,
+    "NFKC": 19
+   }
+  },
+  {
+   "probe_id": "p17",
+   "js_string": {
+    "start": 10,
+    "end": 15,
+    "length": 15
+   },
+   "code_points_before_start": 10,
+   "intl_segmenter": {
+    "start": 10,
+    "end": 13,
+    "length": 13
+   },
+   "normalised_length": {
+    "NFC": 15,
+    "NFKC": 15
+   }
+  },
+  {
+   "probe_id": "p18",
+   "js_string": {
+    "start": 10,
+    "end": 16,
+    "length": 16
+   },
+   "code_points_before_start": 10,
+   "intl_segmenter": {
+    "start": 10,
+    "end": 16,
+    "length": 16
+   },
+   "normalised_length": {
+    "NFC": 16,
+    "NFKC": 16
+   }
+  },
+  {
+   "probe_id": "p19",
+   "js_string": {
+    "start": 5,
+    "end": 11,
+    "length": 19
+   },
+   "code_points_before_start": 5,
+   "intl_segmenter": {
+    "start": 5,
+    "end": 11,
+    "length": 19
+   },
+   "normalised_length": {
+    "NFC": 19,
+    "NFKC": 19
+   }
+  },
+  {
+   "probe_id": "p20",
+   "js_string": {
+    "start": 14,
+    "end": 21,
+    "length": 21
+   },
+   "code_points_before_start": 13,
+   "intl_segmenter": {
+    "start": 11,
+    "end": 14,
+    "length": 14
+   },
+   "normalised_length": {
+    "NFC": 20,
+    "NFKC": 20
+   }
+  }
+ ],
+ "browser": "chromium 156.0.8078.4"
+}

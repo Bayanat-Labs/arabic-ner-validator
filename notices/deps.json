@@ -1,0 +1,50 @@
+[
+  {
+    "License": "MPL-2.0",
+    "Name": "hypothesis",
+    "URL": "https://hypothesis.works",
+    "Version": "6.170.14"
+  },
+  {
+    "License": "MIT",
+    "Name": "jsonschema",
+    "URL": "https://github.com/python-jsonschema/jsonschema",
+    "Version": "4.26.0"
+  },
+  {
+    "License": "Apache-2.0",
+    "Name": "pyarrow",
+    "URL": "https://arrow.apache.org/",
+    "Version": "26.0.0"
+  },
+  {
+    "License": "MIT",
+    "Name": "pytest",
+    "URL": "https://docs.pytest.org/en/latest/",
+    "Version": "9.2.0"
+  },
+  {
+    "License": "Apache-2.0 AND CNRI-Python",
+    "Name": "regex",
+    "URL": "https://github.com/mrabarnett/mrab-regex",
+    "Version": "2026.9.29"
+  },
+  {
+    "License": "MIT License",
+    "Name": "seqeval",
+    "URL": "https://github.com/chakki-works/seqeval",
+    "Version": "1.2.2"
+  },
+  {
+    "License": "MIT License",
+    "Name": "spacy",
+    "URL": "https://spacy.io",
+    "Version": "3.8.18"
+  },
+  {
+    "License": "Apache Software License",
+    "Name": "tokenizers",
+    "URL": "https://github.com/huggingface/tokenizers",
+    "Version": "0.23.3"
+  }
+]

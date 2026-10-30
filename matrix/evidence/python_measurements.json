@@ -1,0 +1,1870 @@
+{
+ "python": "3.14.7",
+ "unicodedata": "16.0.0",
+ "regex": "2026.9.29",
+ "spacy": "3.8.18",
+ "tokenizers": "0.23.3",
+ "tokenizer_models": {
+  "google-bert/bert-base-multilingual-cased": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+  "xlm-roberta-base": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "aubmindlab/bert-base-arabertv02": "016fb9d6768f522a59c6e0d2d5d5d43a4e1bff60"
+ },
+ "probes": [
+  {
+   "probe_id": "p01",
+   "python_str": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "utf8_bytes": {
+    "start": 29,
+    "end": 41,
+    "length": 41,
+    "find": 29
+   },
+   "regex_grapheme": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "normalised_length": {
+    "NFC": 22,
+    "NFKC": 22
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "زار",
+     "الوفد",
+     "مدينة",
+     "الرياض"
+    ],
+    "char_span": {
+     "strict": [
+      16,
+      22,
+      "الرياض"
+     ],
+     "contract": [
+      16,
+      22,
+      "الرياض"
+     ],
+     "expand": [
+      16,
+      22,
+      "الرياض"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      16,
+      22
+     ],
+     "tokens_in_span": [
+      "الرياض"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      16,
+      22
+     ],
+     "tokens_in_span": [
+      "▁الرياض"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      16,
+      22
+     ],
+     "tokens_in_span": [
+      "الرياض"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p02",
+   "python_str": {
+    "start": 17,
+    "end": 25,
+    "length": 30
+   },
+   "utf8_bytes": {
+    "start": 31,
+    "end": 47,
+    "length": 56,
+    "find": 31
+   },
+   "regex_grapheme": {
+    "start": 15,
+    "end": 19,
+    "length": 23
+   },
+   "normalised_length": {
+    "NFC": 30,
+    "NFKC": 30
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "سافرَ",
+     "الوفدُ",
+     "إلى",
+     "دِمَشْقَ",
+     "أمسِ"
+    ],
+    "char_span": {
+     "strict": [
+      17,
+      25,
+      "دِمَشْقَ"
+     ],
+     "contract": [
+      17,
+      25,
+      "دِمَشْقَ"
+     ],
+     "expand": [
+      17,
+      25,
+      "دِمَشْقَ"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      17,
+      25
+     ],
+     "tokens_in_span": [
+      "د",
+      "##ِ",
+      "##م",
+      "##َ",
+      "##ش",
+      "##ْ",
+      "##ق",
+      "##َ"
+     ],
+     "normalised_text_length": 30,
+     "max_offset": 30,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      17,
+      25
+     ],
+     "tokens_in_span": [
+      "▁د",
+      "ِ",
+      "م",
+      "َ",
+      "ش",
+      "ْ",
+      "ق",
+      "َ"
+     ],
+     "normalised_text_length": 30,
+     "max_offset": 30,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      17,
+      25
+     ],
+     "tokens_in_span": [
+      "[UNK]"
+     ],
+     "normalised_text_length": 30,
+     "max_offset": 30,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p03",
+   "python_str": {
+    "start": 10,
+    "end": 19,
+    "length": 28
+   },
+   "utf8_bytes": {
+    "start": 18,
+    "end": 36,
+    "length": 52,
+    "find": 18
+   },
+   "regex_grapheme": {
+    "start": 10,
+    "end": 19,
+    "length": 28
+   },
+   "normalised_length": {
+    "NFC": 28,
+    "NFKC": 28
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "تقع",
+     "مدينة",
+     "الريـــاض",
+     "في",
+     "الوسط"
+    ],
+    "char_span": {
+     "strict": [
+      10,
+      19,
+      "الريـــاض"
+     ],
+     "contract": [
+      10,
+      19,
+      "الريـــاض"
+     ],
+     "expand": [
+      10,
+      19,
+      "الريـــاض"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      10,
+      19
+     ],
+     "tokens_in_span": [
+      "ال",
+      "##ري",
+      "##ـ",
+      "##ـ",
+      "##ـ",
+      "##اض"
+     ],
+     "normalised_text_length": 28,
+     "max_offset": 28,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      10,
+      19
+     ],
+     "tokens_in_span": [
+      "▁الر",
+      "ي",
+      "ـــ",
+      "اض"
+     ],
+     "normalised_text_length": 28,
+     "max_offset": 28,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      10,
+      19
+     ],
+     "tokens_in_span": [
+      "[UNK]"
+     ],
+     "normalised_text_length": 28,
+     "max_offset": 28,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p04",
+   "python_str": {
+    "start": 12,
+    "end": 15,
+    "length": 15
+   },
+   "utf8_bytes": {
+    "start": 23,
+    "end": 29,
+    "length": 29,
+    "find": 23
+   },
+   "regex_grapheme": {
+    "start": 12,
+    "end": 15,
+    "length": 15
+   },
+   "normalised_length": {
+    "NFC": 15,
+    "NFKC": 15
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "وصلنا",
+     "😀",
+     "إلى",
+     "جدة"
+    ],
+    "char_span": {
+     "strict": [
+      12,
+      15,
+      "جدة"
+     ],
+     "contract": [
+      12,
+      15,
+      "جدة"
+     ],
+     "expand": [
+      12,
+      15,
+      "جدة"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      12,
+      15
+     ],
+     "tokens_in_span": [
+      "ج",
+      "##دة"
+     ],
+     "normalised_text_length": 15,
+     "max_offset": 15,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      12,
+      15
+     ],
+     "tokens_in_span": [
+      "▁جد",
+      "ة"
+     ],
+     "normalised_text_length": 15,
+     "max_offset": 15,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      12,
+      15
+     ],
+     "tokens_in_span": [
+      "جدة"
+     ],
+     "normalised_text_length": 15,
+     "max_offset": 15,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p05",
+   "python_str": {
+    "start": 15,
+    "end": 22,
+    "length": 22
+   },
+   "utf8_bytes": {
+    "start": 35,
+    "end": 49,
+    "length": 49,
+    "find": 35
+   },
+   "regex_grapheme": {
+    "start": 11,
+    "end": 18,
+    "length": 18
+   },
+   "normalised_length": {
+    "NFC": 22,
+    "NFKC": 22
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "👨",
+     "‍",
+     "👩",
+     "‍",
+     "👧",
+     "عائلة",
+     "من",
+     "القاهرة"
+    ],
+    "char_span": {
+     "strict": [
+      15,
+      22,
+      "القاهرة"
+     ],
+     "contract": [
+      15,
+      22,
+      "القاهرة"
+     ],
+     "expand": [
+      15,
+      22,
+      "القاهرة"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      15,
+      22
+     ],
+     "tokens_in_span": [
+      "القاهرة"
+     ],
+     "normalised_text_length": 20,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      15,
+      22
+     ],
+     "tokens_in_span": [
+      "▁القاهرة"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      15,
+      22
+     ],
+     "tokens_in_span": [
+      "القاهرة"
+     ],
+     "normalised_text_length": 20,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p06",
+   "python_str": {
+    "start": 15,
+    "end": 20,
+    "length": 26
+   },
+   "utf8_bytes": {
+    "start": 28,
+    "end": 38,
+    "length": 49,
+    "find": 28
+   },
+   "regex_grapheme": {
+    "start": 14,
+    "end": 19,
+    "length": 25
+   },
+   "normalised_length": {
+    "NFC": 26,
+    "NFKC": 26
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "قال‌",
+     "الدليل",
+     "إن",
+     "صلالة",
+     "جميلة"
+    ],
+    "char_span": {
+     "strict": [
+      15,
+      20,
+      "صلالة"
+     ],
+     "contract": [
+      15,
+      20,
+      "صلالة"
+     ],
+     "expand": [
+      15,
+      20,
+      "صلالة"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      15,
+      20
+     ],
+     "tokens_in_span": [
+      "ص",
+      "##لال",
+      "##ة"
+     ],
+     "normalised_text_length": 25,
+     "max_offset": 26,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      15,
+      20
+     ],
+     "tokens_in_span": [
+      "▁صل",
+      "الة"
+     ],
+     "normalised_text_length": 26,
+     "max_offset": 26,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      15,
+      20
+     ],
+     "tokens_in_span": [
+      "صلال",
+      "##ة"
+     ],
+     "normalised_text_length": 25,
+     "max_offset": 26,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p07",
+   "python_str": {
+    "start": 17,
+    "end": 23,
+    "length": 23
+   },
+   "utf8_bytes": {
+    "start": 32,
+    "end": 44,
+    "length": 44,
+    "find": 32
+   },
+   "regex_grapheme": {
+    "start": 17,
+    "end": 23,
+    "length": 23
+   },
+   "normalised_length": {
+    "NFC": 23,
+    "NFKC": 23
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "انتقل",
+     "المقر",
+     "إلى",
+     "‏الرياض"
+    ],
+    "char_span": {
+     "strict": null,
+     "contract": null,
+     "expand": [
+      16,
+      23,
+      "‏الرياض"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      17,
+      23
+     ],
+     "tokens_in_span": [
+      "الرياض"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 23,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      17,
+      23
+     ],
+     "tokens_in_span": [
+      "▁الرياض"
+     ],
+     "normalised_text_length": 23,
+     "max_offset": 23,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      17,
+      23
+     ],
+     "tokens_in_span": [
+      "الرياض"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 23,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p08",
+   "python_str": {
+    "start": 17,
+    "end": 21,
+    "length": 21
+   },
+   "utf8_bytes": {
+    "start": 31,
+    "end": 39,
+    "length": 39,
+    "find": 31
+   },
+   "regex_grapheme": {
+    "start": 17,
+    "end": 21,
+    "length": 21
+   },
+   "normalised_length": {
+    "NFC": 21,
+    "NFKC": 21
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "سافر",
+     "الفريق",
+     "إلى",
+     "؜تونس"
+    ],
+    "char_span": {
+     "strict": null,
+     "contract": null,
+     "expand": [
+      16,
+      21,
+      "؜تونس"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      17,
+      21
+     ],
+     "tokens_in_span": [
+      "تونس"
+     ],
+     "normalised_text_length": 20,
+     "max_offset": 21,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      17,
+      21
+     ],
+     "tokens_in_span": [
+      "تون",
+      "س"
+     ],
+     "normalised_text_length": 21,
+     "max_offset": 21,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 1
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      17,
+      21
+     ],
+     "tokens_in_span": [
+      "تونس"
+     ],
+     "normalised_text_length": 20,
+     "max_offset": 21,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p09",
+   "python_str": {
+    "start": 19,
+    "end": 24,
+    "length": 24
+   },
+   "utf8_bytes": {
+    "start": 33,
+    "end": 43,
+    "length": 43,
+    "find": 33
+   },
+   "regex_grapheme": {
+    "start": 18,
+    "end": 22,
+    "length": 22
+   },
+   "normalised_length": {
+    "NFC": 24,
+    "NFKC": 24
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "سطر",
+     "أول",
+     "\r\n",
+     "زار",
+     "الوفد",
+     "عمّان"
+    ],
+    "char_span": {
+     "strict": [
+      19,
+      24,
+      "عمّان"
+     ],
+     "contract": [
+      19,
+      24,
+      "عمّان"
+     ],
+     "expand": [
+      19,
+      24,
+      "عمّان"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      19,
+      24
+     ],
+     "tokens_in_span": [
+      "ع",
+      "##م",
+      "##ّ",
+      "##ان"
+     ],
+     "normalised_text_length": 24,
+     "max_offset": 24,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      19,
+      24
+     ],
+     "tokens_in_span": [
+      "▁عم",
+      "ّ",
+      "ان"
+     ],
+     "normalised_text_length": 23,
+     "max_offset": 24,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      19,
+      24
+     ],
+     "tokens_in_span": [
+      "[UNK]"
+     ],
+     "normalised_text_length": 24,
+     "max_offset": 24,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p10",
+   "python_str": {
+    "start": 17,
+    "end": 24,
+    "length": 24
+   },
+   "utf8_bytes": {
+    "start": 31,
+    "end": 45,
+    "length": 45,
+    "find": 31
+   },
+   "regex_grapheme": {
+    "start": 17,
+    "end": 24,
+    "length": 24
+   },
+   "normalised_length": {
+    "NFC": 24,
+    "NFKC": 25
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "ﻻ",
+     "يزال",
+     "المتحف",
+     "في",
+     "الشارقة"
+    ],
+    "char_span": {
+     "strict": [
+      17,
+      24,
+      "الشارقة"
+     ],
+     "contract": [
+      17,
+      24,
+      "الشارقة"
+     ],
+     "expand": [
+      17,
+      24,
+      "الشارقة"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      17,
+      24
+     ],
+     "tokens_in_span": [
+      "ال",
+      "##شار",
+      "##قة"
+     ],
+     "normalised_text_length": 24,
+     "max_offset": 24,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      17,
+      24
+     ],
+     "tokens_in_span": [
+      "▁الشا",
+      "رقة"
+     ],
+     "normalised_text_length": 25,
+     "max_offset": 24,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      17,
+      24
+     ],
+     "tokens_in_span": [
+      "الشارقة"
+     ],
+     "normalised_text_length": 24,
+     "max_offset": 24,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p11",
+   "python_str": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "utf8_bytes": {
+    "start": 29,
+    "end": 41,
+    "length": 41,
+    "find": 29
+   },
+   "regex_grapheme": {
+    "start": 16,
+    "end": 22,
+    "length": 22
+   },
+   "normalised_length": {
+    "NFC": 22,
+    "NFKC": 25
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "كتب",
+     "الخطاط",
+     "ﷲ",
+     "في",
+     "الدوحة"
+    ],
+    "char_span": {
+     "strict": [
+      16,
+      22,
+      "الدوحة"
+     ],
+     "contract": [
+      16,
+      22,
+      "الدوحة"
+     ],
+     "expand": [
+      16,
+      22,
+      "الدوحة"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      16,
+      22
+     ],
+     "tokens_in_span": [
+      "ال",
+      "##دو",
+      "##حة"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      16,
+      22
+     ],
+     "tokens_in_span": [
+      "▁الدو",
+      "حة"
+     ],
+     "normalised_text_length": 25,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      16,
+      22
+     ],
+     "tokens_in_span": [
+      "الدوحة"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p12",
+   "python_str": {
+    "start": 15,
+    "end": 22,
+    "length": 22
+   },
+   "utf8_bytes": {
+    "start": 27,
+    "end": 41,
+    "length": 41,
+    "find": 27
+   },
+   "regex_grapheme": {
+    "start": 14,
+    "end": 21,
+    "length": 21
+   },
+   "normalised_length": {
+    "NFC": 21,
+    "NFKC": 21
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "سأل",
+     "الباحث",
+     "عن",
+     "القاهرة"
+    ],
+    "char_span": {
+     "strict": [
+      15,
+      22,
+      "القاهرة"
+     ],
+     "contract": [
+      15,
+      22,
+      "القاهرة"
+     ],
+     "expand": [
+      15,
+      22,
+      "القاهرة"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      15,
+      22
+     ],
+     "tokens_in_span": [
+      "القاهرة"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      15,
+      22
+     ],
+     "tokens_in_span": [
+      "▁القاهرة"
+     ],
+     "normalised_text_length": 21,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      15,
+      22
+     ],
+     "tokens_in_span": [
+      "القاهرة"
+     ],
+     "normalised_text_length": 22,
+     "max_offset": 22,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p13",
+   "python_str": {
+    "start": 17,
+    "end": 21,
+    "length": 29
+   },
+   "utf8_bytes": {
+    "start": 31,
+    "end": 39,
+    "length": 53,
+    "find": 31
+   },
+   "regex_grapheme": {
+    "start": 17,
+    "end": 21,
+    "length": 29
+   },
+   "normalised_length": {
+    "NFC": 29,
+    "NFKC": 29
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "افتتح",
+     "المعرض",
+     "عام",
+     "٢٠٢٦",
+     "في",
+     "مسقط"
+    ],
+    "char_span": {
+     "strict": [
+      17,
+      21,
+      "٢٠٢٦"
+     ],
+     "contract": [
+      17,
+      21,
+      "٢٠٢٦"
+     ],
+     "expand": [
+      17,
+      21,
+      "٢٠٢٦"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      17,
+      21
+     ],
+     "tokens_in_span": [
+      "[UNK]"
+     ],
+     "normalised_text_length": 29,
+     "max_offset": 29,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      17,
+      21
+     ],
+     "tokens_in_span": [
+      "▁٢",
+      "٠",
+      "٢",
+      "٦"
+     ],
+     "normalised_text_length": 29,
+     "max_offset": 29,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      17,
+      21
+     ],
+     "tokens_in_span": [
+      "٢٠",
+      "##٢",
+      "##٦"
+     ],
+     "normalised_text_length": 29,
+     "max_offset": 29,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p14",
+   "python_str": {
+    "start": 11,
+    "end": 20,
+    "length": 35
+   },
+   "utf8_bytes": {
+    "start": 20,
+    "end": 29,
+    "length": 55,
+    "find": 20
+   },
+   "regex_grapheme": {
+    "start": 11,
+    "end": 20,
+    "length": 35
+   },
+   "normalised_length": {
+    "NFC": 35,
+    "NFKC": 35
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "أعلنت",
+     "شركة",
+     "Microsoft",
+     "عن",
+     "مركز",
+     "في",
+     "دبي"
+    ],
+    "char_span": {
+     "strict": [
+      11,
+      20,
+      "Microsoft"
+     ],
+     "contract": [
+      11,
+      20,
+      "Microsoft"
+     ],
+     "expand": [
+      11,
+      20,
+      "Microsoft"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      11,
+      20
+     ],
+     "tokens_in_span": [
+      "Microsoft"
+     ],
+     "normalised_text_length": 35,
+     "max_offset": 35,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      11,
+      20
+     ],
+     "tokens_in_span": [
+      "▁Microsoft"
+     ],
+     "normalised_text_length": 35,
+     "max_offset": 35,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      11,
+      20
+     ],
+     "tokens_in_span": [
+      "M",
+      "##ic",
+      "##ro",
+      "##s",
+      "##o",
+      "##ft"
+     ],
+     "normalised_text_length": 35,
+     "max_offset": 35,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p15",
+   "python_str": {
+    "start": 19,
+    "end": 22,
+    "length": 32
+   },
+   "utf8_bytes": {
+    "start": 36,
+    "end": 39,
+    "length": 58,
+    "find": 36
+   },
+   "regex_grapheme": {
+    "start": 19,
+    "end": 22,
+    "length": 32
+   },
+   "normalised_length": {
+    "NFC": 32,
+    "NFKC": 32
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "تعاونت",
+     "الجامعة",
+     "مع",
+     "‎MIT‎",
+     "في",
+     "مشروع"
+    ],
+    "char_span": {
+     "strict": null,
+     "contract": null,
+     "expand": [
+      18,
+      23,
+      "‎MIT‎"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      19,
+      22
+     ],
+     "tokens_in_span": [
+      "MIT"
+     ],
+     "normalised_text_length": 30,
+     "max_offset": 32,
+     "controls_in_text": 2,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      19,
+      22
+     ],
+     "tokens_in_span": [
+      "▁MIT"
+     ],
+     "normalised_text_length": 32,
+     "max_offset": 32,
+     "controls_in_text": 2,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      19,
+      22
+     ],
+     "tokens_in_span": [
+      "M",
+      "##IT"
+     ],
+     "normalised_text_length": 30,
+     "max_offset": 32,
+     "controls_in_text": 2,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p16",
+   "python_str": {
+    "start": 13,
+    "end": 19,
+    "length": 19
+   },
+   "utf8_bytes": {
+    "start": 25,
+    "end": 37,
+    "length": 37,
+    "find": 25
+   },
+   "regex_grapheme": {
+    "start": 13,
+    "end": 19,
+    "length": 19
+   },
+   "normalised_length": {
+    "NFC": 19,
+    "NFKC": 19
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "﻿يزور",
+     "السياح",
+     "الأقصر"
+    ],
+    "char_span": {
+     "strict": [
+      13,
+      19,
+      "الأقصر"
+     ],
+     "contract": [
+      13,
+      19,
+      "الأقصر"
+     ],
+     "expand": [
+      13,
+      19,
+      "الأقصر"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      13,
+      19
+     ],
+     "tokens_in_span": [
+      "ال",
+      "##أ",
+      "##قصر"
+     ],
+     "normalised_text_length": 18,
+     "max_offset": 19,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      13,
+      19
+     ],
+     "tokens_in_span": [
+      "▁الأ",
+      "قصر"
+     ],
+     "normalised_text_length": 19,
+     "max_offset": 19,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      13,
+      19
+     ],
+     "tokens_in_span": [
+      "الأقصر"
+     ],
+     "normalised_text_length": 18,
+     "max_offset": 19,
+     "controls_in_text": 1,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p17",
+   "python_str": {
+    "start": 10,
+    "end": 15,
+    "length": 15
+   },
+   "utf8_bytes": {
+    "start": 18,
+    "end": 28,
+    "length": 28,
+    "find": 18
+   },
+   "regex_grapheme": {
+    "start": 10,
+    "end": 13,
+    "length": 13
+   },
+   "normalised_length": {
+    "NFC": 15,
+    "NFKC": 15
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "زار",
+     "الوفد",
+     "مكَّة"
+    ],
+    "char_span": {
+     "strict": [
+      10,
+      15,
+      "مكَّة"
+     ],
+     "contract": [
+      10,
+      15,
+      "مكَّة"
+     ],
+     "expand": [
+      10,
+      15,
+      "مكَّة"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      10,
+      15
+     ],
+     "tokens_in_span": [
+      "م",
+      "##ك",
+      "##ّ",
+      "##َ",
+      "##ة"
+     ],
+     "normalised_text_length": 15,
+     "max_offset": 15,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      10,
+      15
+     ],
+     "tokens_in_span": [
+      "▁مك",
+      "َّ",
+      "ة"
+     ],
+     "normalised_text_length": 15,
+     "max_offset": 15,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      10,
+      15
+     ],
+     "tokens_in_span": [
+      "[UNK]"
+     ],
+     "normalised_text_length": 15,
+     "max_offset": 15,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p18",
+   "python_str": {
+    "start": 10,
+    "end": 16,
+    "length": 16
+   },
+   "utf8_bytes": {
+    "start": 18,
+    "end": 30,
+    "length": 30,
+    "find": 18
+   },
+   "regex_grapheme": {
+    "start": 10,
+    "end": 16,
+    "length": 16
+   },
+   "normalised_length": {
+    "NFC": 16,
+    "NFKC": 16
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "زرنا",
+     "جدة",
+     "والرياض"
+    ],
+    "char_span": {
+     "strict": null,
+     "contract": null,
+     "expand": [
+      9,
+      16,
+      "والرياض"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      10,
+      16
+     ],
+     "tokens_in_span": [
+      "##ال",
+      "##ريا",
+      "##ض"
+     ],
+     "normalised_text_length": 16,
+     "max_offset": 16,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      10,
+      16
+     ],
+     "tokens_in_span": [
+      "الرياض"
+     ],
+     "normalised_text_length": 16,
+     "max_offset": 16,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      9,
+      16
+     ],
+     "tokens_in_span": [
+      "والرياض"
+     ],
+     "normalised_text_length": 16,
+     "max_offset": 16,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p19",
+   "python_str": {
+    "start": 5,
+    "end": 11,
+    "length": 19
+   },
+   "utf8_bytes": {
+    "start": 9,
+    "end": 21,
+    "length": 35,
+    "find": 9
+   },
+   "regex_grapheme": {
+    "start": 5,
+    "end": 11,
+    "length": 19
+   },
+   "normalised_length": {
+    "NFC": 19,
+    "NFKC": 19
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "زرنا",
+     "الرياض",
+     "،",
+     "ثم",
+     "جدة"
+    ],
+    "char_span": {
+     "strict": [
+      5,
+      11,
+      "الرياض"
+     ],
+     "contract": [
+      5,
+      11,
+      "الرياض"
+     ],
+     "expand": [
+      5,
+      11,
+      "الرياض"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      5,
+      11
+     ],
+     "tokens_in_span": [
+      "الرياض"
+     ],
+     "normalised_text_length": 19,
+     "max_offset": 19,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      5,
+      11
+     ],
+     "tokens_in_span": [
+      "▁الرياض"
+     ],
+     "normalised_text_length": 19,
+     "max_offset": 19,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      5,
+      11
+     ],
+     "tokens_in_span": [
+      "الرياض"
+     ],
+     "normalised_text_length": 19,
+     "max_offset": 19,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  },
+  {
+   "probe_id": "p20",
+   "python_str": {
+    "start": 13,
+    "end": 20,
+    "length": 20
+   },
+   "utf8_bytes": {
+    "start": 24,
+    "end": 38,
+    "length": 38,
+    "find": 24
+   },
+   "regex_grapheme": {
+    "start": 11,
+    "end": 14,
+    "length": 14
+   },
+   "normalised_length": {
+    "NFC": 20,
+    "NFKC": 20
+   },
+   "spacy": {
+    "doc_text_equals_input": true,
+    "tokens": [
+     "🌍",
+     "مرحبًا",
+     "\r\n",
+     "من",
+     "مَكَّةَ"
+    ],
+    "char_span": {
+     "strict": [
+      13,
+      20,
+      "مَكَّةَ"
+     ],
+     "contract": [
+      13,
+      20,
+      "مَكَّةَ"
+     ],
+     "expand": [
+      13,
+      20,
+      "مَكَّةَ"
+     ]
+    }
+   },
+   "hf": {
+    "google-bert/bert-base-multilingual-cased": {
+     "cover": [
+      13,
+      20
+     ],
+     "tokens_in_span": [
+      "م",
+      "##َ",
+      "##ك",
+      "##َّة",
+      "##َ"
+     ],
+     "normalised_text_length": 20,
+     "max_offset": 20,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "xlm-roberta-base": {
+     "cover": [
+      13,
+      20
+     ],
+     "tokens_in_span": [
+      "▁م",
+      "َ",
+      "ك",
+      "َّ",
+      "ة",
+      "َ"
+     ],
+     "normalised_text_length": 19,
+     "max_offset": 20,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    },
+    "aubmindlab/bert-base-arabertv02": {
+     "cover": [
+      13,
+      20
+     ],
+     "tokens_in_span": [
+      "[UNK]"
+     ],
+     "normalised_text_length": 20,
+     "max_offset": 20,
+     "controls_in_text": 0,
+     "controls_covered_by_a_token": 0
+    }
+   }
+  }
+ ]
+}

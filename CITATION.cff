@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use the validator or its test cases, please cite it as below and give the version."
+type: software
+title: "Arabic NER Offset Validator (arabic-ner-validator)"
+version: "0.1.0"
+date-released: "2026-10-30"
+license: Apache-2.0
+repository-code: "https://github.com/Bayanat-Labs/arabic-ner-validator"
+url: "https://huggingface.co/spaces/Bayanat-Labs/arabic-ner-offset-validator"
+authors:
+  - name: "Bayanat Labs"
+keywords:
+  - arabic
+  - named-entity-recognition
+  - annotation
+  - data-quality
+  - unicode
+  - offsets
+abstract: "Checks Arabic named-entity annotations for offsets counted in the wrong unit, normalisation drift (NFC, NFKC, tatweel, diacritics, line breaks, byte order marks), grapheme and clitic boundary errors, bidi and zero-width controls at span edges, overlaps, nesting and BIO/BIOES/BILUO tag errors. Python package, command-line tool and a browser port; 200 test cases under CC BY 4.0."

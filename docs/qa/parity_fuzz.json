@@ -1,0 +1,26 @@
+[
+ {
+  "cases": 3000,
+  "seed": 1,
+  "mismatches": 0,
+  "first": []
+ },
+ {
+  "cases": 5000,
+  "seed": 2,
+  "mismatches": 0,
+  "first": []
+ },
+ {
+  "cases": 5000,
+  "seed": 3,
+  "mismatches": 0,
+  "first": []
+ },
+ {
+  "cases": 5000,
+  "seed": 4,
+  "mismatches": 0,
+  "first": []
+ }
+]

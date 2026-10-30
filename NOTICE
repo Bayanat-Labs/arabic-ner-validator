@@ -1,0 +1,29 @@
+arabic-ner-validator (Arabic NER Offset Validator) by Bayanat Labs
+Copyright 2026 Bayanat Labs
+
+Code (src/, scripts/, tests/*.py, tests/js/, web/*.js, web/index.html, web/style.css, matrix/*.py,
+matrix/*.js, matrix/*.mjs, .github/): Apache License 2.0 (LICENSE).
+Test cases (fixtures/), the drift inventory, the offset-convention matrix, JSON Schemas and
+documentation: CC BY 4.0 (LICENSE-data).
+
+Unicode data. inventory/drift_sequences_16.0.0.csv, inventory/drift_sequences_17.0.0.csv and
+tests/data/grapheme_break_*.json are derived from the Unicode Character Database, versions 16.0.0
+and 17.0.0 (UnicodeData.txt, DerivedNormalizationProps.txt, auxiliary/GraphemeBreakTest.txt).
+Copyright © 1991-2026 Unicode, Inc. Distributed under the Unicode License v3 (LICENSES/Unicode-3.0.txt).
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the United States and
+other countries.
+
+The web page bundles the IBM Plex Sans Arabic font, version 1.005: the unmodified files
+IBMPlexSansArabic-Regular.woff2 and IBMPlexSansArabic-SemiBold.woff2 from IBM's npm package
+@ibm/plex-sans-arabic 1.1.0. Copyright 2017 IBM Corp. with Reserved Font Name "Plex". Licensed under
+the SIL Open Font License, Version 1.1 (web/fonts/OFL.txt).
+
+Runtime dependency (installed, not bundled): regex (Apache-2.0 AND CNRI-Python). Test-time tools
+(not bundled): spaCy (MIT), seqeval (MIT), hypothesis (MPL-2.0), jsonschema (MIT), pytest (MIT);
+versions and licences in notices/deps.json.
+
+The offset-convention matrix cites file paths, line numbers and SHA-256 checksums of source files
+of Label Studio (Apache-2.0) and doccano and v-annotator (MIT); no part of their code is included.
+
+The Bayanat Labs name, logo and project branding are not licensed under the Apache License 2.0
+or under CC BY 4.0.

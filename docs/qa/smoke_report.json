@@ -1,0 +1,76 @@
+{
+ "note": "Aggregate counts only, computed locally; no record, sentence or span of these datasets is included.",
+ "datasets": [
+  {
+   "dataset": "unimelb-nlp/wikiann",
+   "revision": "f0a3be6dc5564c0cc4150bb660144800a1f539d4",
+   "license_on_card": "unknown (card)",
+   "read_as": "hf_tokens rows, IOB2, tag names O,B-PER,I-PER,B-ORG,I-ORG,B-LOC,I-LOC",
+   "records": 40000,
+   "records_with_errors": 21,
+   "spans": 45027,
+   "valid_spans": 33028,
+   "by_severity": {
+    "error": 21,
+    "info": 0,
+    "warning": 11978
+   },
+   "by_code": {
+    "E002": 18,
+    "E012": 3,
+    "W102": 11978
+   }
+  },
+  {
+   "dataset": "HebArabNlpProject/ShamNER",
+   "revision": "49886e6a1a8bf2127dfba941b5f2eb516bbf71e6",
+   "license_on_card": "cc-by-4.0",
+   "read_as": "canonical records, offsets read as code points (the dataset's character spans), span text checked where it is not null",
+   "records": 23422,
+   "records_with_errors": 1140,
+   "spans": 15335,
+   "valid_spans": 10861,
+   "by_severity": {
+    "error": 1682,
+    "info": 3988,
+    "warning": 3177
+   },
+   "by_code": {
+    "E001": 3,
+    "E002": 3,
+    "E003": 61,
+    "E005": 79,
+    "E006": 744,
+    "E007": 776,
+    "E011": 12,
+    "E016": 4,
+    "I201": 1474,
+    "I202": 197,
+    "I204": 2317,
+    "W101": 3153,
+    "W102": 24
+   }
+  },
+  {
+   "dataset": "asas-ai/DarNERcorp",
+   "revision": "ac00a90d2312fa5c781bc464025decd9ac13b599",
+   "license_on_card": "cc-by-4.0",
+   "read_as": "token rows grouped into sentences at sentence-final punctuation, CoNLL, IOB2",
+   "records": 2524,
+   "records_with_errors": 15,
+   "spans": 6070,
+   "valid_spans": 6062,
+   "by_severity": {
+    "error": 23,
+    "info": 1,
+    "warning": 5
+   },
+   "by_code": {
+    "E002": 3,
+    "E009": 20,
+    "I201": 1,
+    "W102": 5
+   }
+  }
+ ]
+}

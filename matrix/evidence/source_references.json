@@ -1,0 +1,20 @@
+[
+ {"tool": "Label Studio", "version": "develop branch at commit 224dd4f78067 (latest release 1.23.2)", "interface": "Text tag region value.start / value.end in the JSON export",
+  "offset_unit": "codepoint", "crlf": "2 (carriage return and line feed are one position each)", "normalises_text": "not determined from source", "emoji": "U+1F600 counts 1",
+  "repository": "https://github.com/HumanSignal/label-studio", "commit": "224dd4f78067c3385d655c8d44e00aa156cef3b9",
+  "references": [
+   {"path": "web/libs/editor/src/tags/object/RichText/domManager.ts", "lines": "448", "what": "the text of each node is split with [...text], one array element per code point", "file_sha256": "d34362d39ff903a3ae9ea0b7c7eee507b2a2c7e19734ef63ab635da5f020a973"},
+   {"path": "web/libs/editor/src/tags/object/RichText/domManager.ts", "lines": "22-30", "what": "normalizeText replaces every carriage return and every line feed separately, so CRLF keeps two positions", "file_sha256": "d34362d39ff903a3ae9ea0b7c7eee507b2a2c7e19734ef63ab635da5f020a973"},
+   {"path": "web/libs/editor/tests/integration/e2e/ner/emoji.cy.ts", "lines": "18, 49", "what": "the project's own tests: 'Should calculate offsets by code points in text' (and in multiline text)", "file_sha256": "0c038f375e2add883b89519b15d8a118ce8e72ad3d6929c68209344d4daf80fc"}],
+  "notes": "Offsets from the Text tag; HyperText regions use XPath ranges plus globalOffsets and are not covered here."},
+ {"tool": "doccano", "version": "master at commit ab6b765ea326 (latest release v1.8.5), v-annotator 0.1.28 at commit ab973f0ff806", "interface": "sequence labelling JSONL export (label / entities offsets)",
+  "offset_unit": "utf16 (default); grapheme when the project's grapheme mode is on", "crlf": "not determined from source", "normalises_text": "not determined from source",
+  "emoji": "U+1F600 counts 2 by default, 1 in grapheme mode",
+  "repository": "https://github.com/doccano/doccano and https://github.com/doccano/v-annotator", "commit": "ab6b765ea326d07b2b806a4280cd097565e62321 / ab973f0ff806391ceaddca22b4a331248664e544",
+  "references": [
+   {"path": "doccano: backend/projects/models.py", "lines": "117", "what": "grapheme_mode = models.BooleanField(default=False)", "file_sha256": "34a35cf2d4c5285f54adf8175e92ecf97d53b3075e7988909e66d51d5cf2e207"},
+   {"path": "doccano: frontend/pages/projects/_id/sequence-labeling/index.vue", "lines": "28", "what": "the annotator receives :grapheme-mode=\"project.enableGraphemeMode\"", "file_sha256": "07e4232d40b6dd7fcb0fa88451683aebca4fcdd7a3a989e7ef2f4b40792bfd39"},
+   {"path": "v-annotator: src/domain/models/EventHandler/TextSelectionHandler.ts", "lines": "42-43, 75-82", "what": "offsets come from the DOM selection (UTF-16 positions) and are converted to grapheme offsets only in grapheme mode", "file_sha256": "0199dfcba23d2183a216fc5ec81b9e73c0c9fd19fe729852355cfffeb3cf15fb"},
+   {"path": "v-annotator: src/domain/models/Label/Text.ts", "lines": "23-29", "what": "grapheme-splitter clusters mapped to positions with String.length (UTF-16 units)", "file_sha256": "b85803516cc5c5d1b402ad7ee67bf0ed9e1a9aee899d51754af8174f626efecb"}],
+  "notes": "The code names these positions code points, but String.length and DOM selection offsets count UTF-16 code units."}
+]

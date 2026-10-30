@@ -1,0 +1,24 @@
+{
+ "note": "A fixture of category X counts as detected when the validator reports at least one error or warning whose code is listed for X. A valid fixture passes when the validator reports no error and no warning (info notes do not count). 'primary' is the code that names the mechanism; 'codes' also lists related codes that diagnose the same failure from another side.",
+ "categories": {
+  "a": {"name": "Astral character (emoji) before the span: UTF-16 vs code point offsets", "primary": "E014", "codes": ["E014", "E015"]},
+  "b": {"name": "UTF-8 byte offsets", "primary": "E014", "codes": ["E014", "E015"]},
+  "c": {"name": "NFC composition drift", "primary": "E011", "codes": ["E011", "E004"]},
+  "d": {"name": "NFKC ligature expansion", "primary": "E011", "codes": ["E011"]},
+  "e": {"name": "Span edge between a letter and its haraka or shadda", "primary": "E004", "codes": ["E004"]},
+  "f": {"name": "Tatweel removed after annotation", "primary": "E011", "codes": ["E011"]},
+  "g": {"name": "Bidi or zero-width control at a span edge", "primary": "E012", "codes": ["E012"]},
+  "h": {"name": "Clitic boundary under the include or exclude policy", "primary": "E008", "codes": ["E008"]},
+  "i": {"name": "Span edge inside a word or token", "primary": "E007", "codes": ["E007"]},
+  "j": {"name": "Overlapping spans", "primary": "E005", "codes": ["E005"]},
+  "k": {"name": "Nested spans under the forbid or allow policy", "primary": "E006", "codes": ["E006"]},
+  "l": {"name": "Empty, zero-length or reversed span", "primary": "E002", "codes": ["E002"]},
+  "m": {"name": "Invalid tag or tag transition (IOB2, BIOES, BILUO)", "primary": "E009", "codes": ["E009", "E010"]},
+  "n": {"name": "CRLF vs LF line-break shift", "primary": "E013", "codes": ["E013"]},
+  "o": {"name": "UTF-8 byte order mark", "primary": "E018", "codes": ["E018"]},
+  "p": {"name": "Span text differs from text[start:end]", "primary": "E003", "codes": ["E003"]},
+  "q": {"name": "Arabic punctuation at a span edge", "primary": "W102", "codes": ["W102"]},
+  "r": {"name": "Latin-script entity inside right-to-left text", "primary": "E016", "codes": ["E016", "E012", "E007", "E008", "E003"]},
+  "v": {"name": "Valid records that must produce no error or warning", "primary": null, "codes": []}
+ }
+}

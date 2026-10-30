@@ -1,0 +1,235 @@
+{
+ "validator_version": "0.1.0",
+ "codes": {
+  "error": 20,
+  "warning": 2,
+  "info": 5
+ },
+ "codes_total": 27,
+ "dev": {
+  "fixtures": 100,
+  "valid": 25,
+  "invalid": 75,
+  "categories": 18,
+  "by_category": {
+   "a": 5,
+   "b": 5,
+   "c": 5,
+   "d": 5,
+   "e": 5,
+   "f": 5,
+   "g": 5,
+   "h": 6,
+   "i": 5,
+   "j": 5,
+   "k": 5,
+   "l": 5,
+   "m": 7,
+   "n": 5,
+   "o": 5,
+   "p": 5,
+   "q": 5,
+   "r": 5,
+   "v": 7
+  },
+  "by_format": {
+   "canonical": 63,
+   "conll": 8,
+   "doccano": 14,
+   "hf_tokens": 2,
+   "label_studio": 10,
+   "spacy": 3
+  },
+  "pass": 100
+ },
+ "acceptance": {
+  "fixtures": 100,
+  "valid": 26,
+  "invalid": 74,
+  "categories": 18,
+  "by_category": {
+   "a": 5,
+   "b": 5,
+   "c": 5,
+   "d": 5,
+   "e": 5,
+   "f": 5,
+   "g": 5,
+   "h": 7,
+   "i": 5,
+   "j": 5,
+   "k": 5,
+   "l": 5,
+   "m": 6,
+   "n": 5,
+   "o": 5,
+   "p": 5,
+   "q": 5,
+   "r": 5,
+   "v": 7
+  },
+  "by_format": {
+   "canonical": 71,
+   "conll": 8,
+   "doccano": 8,
+   "label_studio": 9,
+   "spacy": 4
+  },
+  "pass": 96,
+  "pass_frozen_build": 86,
+  "primary_code": 93,
+  "js_python_mismatches": 0
+ },
+ "oracle": {
+  "fixtures": 51,
+  "records": 51,
+  "skipped_nested": 4,
+  "checks": {
+   "offsets_to_biluo": 51,
+   "biluo_to_offsets": 51,
+   "iob_to_biluo": 51,
+   "biluo_to_iob": 44,
+   "round_trip": 44
+  },
+  "agree": {
+   "offsets_to_biluo": 51,
+   "biluo_to_offsets": 51,
+   "iob_to_biluo": 51,
+   "biluo_to_iob": 44,
+   "round_trip": 44
+  }
+ },
+ "inventory": {
+  "16.0.0": {
+   "rows": 4679,
+   "by_kind": {
+    "single": 876,
+    "composition": 149,
+    "reorder": 3654
+   },
+   "length_changing": 570
+  },
+  "17.0.0": {
+   "rows": 4859,
+   "by_kind": {
+    "single": 876,
+    "composition": 149,
+    "reorder": 3834
+   },
+   "length_changing": 570
+  }
+ },
+ "grapheme_break_tests": {
+  "16.0.0": {
+   "cases": 1093,
+   "regex_pass": 1092,
+   "intl_segmenter_pass": 1092
+  },
+  "17.0.0": {
+   "cases": 766,
+   "regex_pass": 766,
+   "intl_segmenter_pass": 766
+  },
+  "intl_segmenter_runtime": "node 22.23.2 (ICU 78.2, Unicode 17.0)"
+ },
+ "normalization_conformance": {
+  "16.0.0": {
+   "checks": 399300,
+   "failures": 0,
+   "identity_code_points": 1094979,
+   "identity_failures": 0
+  },
+  "17.0.0": {
+   "checks": 400680,
+   "failures": 0,
+   "identity_code_points": 1094978,
+   "identity_failures": 0
+  }
+ },
+ "parity_fuzz": {
+  "runs": 4,
+  "cases": 18000,
+  "mismatches": 0
+ },
+ "matrix": {
+  "rows": 13,
+  "measured": 11,
+  "from_source": 2,
+  "tools": 9,
+  "probes": 20
+ },
+ "rejected_examples": 20,
+ "smoke": [
+  {
+   "dataset": "unimelb-nlp/wikiann",
+   "revision": "f0a3be6dc5564c0cc4150bb660144800a1f539d4",
+   "license_on_card": "unknown (card)",
+   "read_as": "hf_tokens rows, IOB2, tag names O,B-PER,I-PER,B-ORG,I-ORG,B-LOC,I-LOC",
+   "records": 40000,
+   "records_with_errors": 21,
+   "spans": 45027,
+   "valid_spans": 33028,
+   "by_severity": {
+    "error": 21,
+    "info": 0,
+    "warning": 11978
+   },
+   "by_code": {
+    "E002": 18,
+    "E012": 3,
+    "W102": 11978
+   }
+  },
+  {
+   "dataset": "HebArabNlpProject/ShamNER",
+   "revision": "49886e6a1a8bf2127dfba941b5f2eb516bbf71e6",
+   "license_on_card": "cc-by-4.0",
+   "read_as": "canonical records, offsets read as code points (the dataset's character spans), span text checked where it is not null",
+   "records": 23422,
+   "records_with_errors": 1140,
+   "spans": 15335,
+   "valid_spans": 10861,
+   "by_severity": {
+    "error": 1682,
+    "info": 3988,
+    "warning": 3177
+   },
+   "by_code": {
+    "E001": 3,
+    "E002": 3,
+    "E003": 61,
+    "E005": 79,
+    "E006": 744,
+    "E007": 776,
+    "E011": 12,
+    "E016": 4,
+    "I201": 1474,
+    "I202": 197,
+    "I204": 2317,
+    "W101": 3153,
+    "W102": 24
+   }
+  },
+  {
+   "dataset": "asas-ai/DarNERcorp",
+   "revision": "ac00a90d2312fa5c781bc464025decd9ac13b599",
+   "license_on_card": "cc-by-4.0",
+   "read_as": "token rows grouped into sentences at sentence-final punctuation, CoNLL, IOB2",
+   "records": 2524,
+   "records_with_errors": 15,
+   "spans": 6070,
+   "valid_spans": 6062,
+   "by_severity": {
+    "error": 23,
+    "info": 1,
+    "warning": 5
+   },
+   "by_code": {
+    "E002": 3,
+    "E009": 20,
+    "I201": 1,
+    "W102": 5
+   }
+  }
+ ]
+}

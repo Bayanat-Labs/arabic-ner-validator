@@ -1,0 +1,1618 @@
+{
+ "summary": {
+  "fixtures": 100,
+  "valid": 26,
+  "invalid": 74,
+  "pass": 86,
+  "pass_readme_rule": 88,
+  "primary_code": 83,
+  "js_python_mismatches": 0,
+  "by_category": {
+   "a": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "b": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "c": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "d": {
+    "fixtures": 5,
+    "pass": 4
+   },
+   "e": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "f": {
+    "fixtures": 5,
+    "pass": 4
+   },
+   "g": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "h": {
+    "fixtures": 7,
+    "pass": 6
+   },
+   "i": {
+    "fixtures": 5,
+    "pass": 0
+   },
+   "j": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "k": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "l": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "m": {
+    "fixtures": 6,
+    "pass": 5
+   },
+   "n": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "o": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "p": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "q": {
+    "fixtures": 5,
+    "pass": 1
+   },
+   "r": {
+    "fixtures": 5,
+    "pass": 5
+   },
+   "v": {
+    "fixtures": 7,
+    "pass": 6
+   }
+  }
+ },
+ "parity_mismatches": [],
+ "results": [
+  {
+   "fixture_id": "acc-a01",
+   "category": "a",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E014"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if they are read as utf16 instead of codepoint (the declared unit)."
+   ]
+  },
+  {
+   "fixture_id": "acc-a02",
+   "category": "a",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-a03",
+   "category": "a",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E014"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if they are read as codepoint instead of utf16 (the declared unit)."
+   ]
+  },
+  {
+   "fixture_id": "acc-a04",
+   "category": "a",
+   "valid": false,
+   "format": "label_studio",
+   "flagged": [
+    "E001",
+    "E003",
+    "E014"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if they are read as utf16 instead of codepoint (the declared unit).",
+    "The end offset (42) is outside the text, which has 40 codepoint units.",
+    "The offsets fit if they are read as utf16 instead of codepoint (the declared unit)."
+   ]
+  },
+  {
+   "fixture_id": "acc-a05",
+   "category": "a",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E014"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if they are read as utf16 instead of codepoint (the declared unit)."
+   ]
+  },
+  {
+   "fixture_id": "acc-b01",
+   "category": "b",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-b02",
+   "category": "b",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E001",
+    "E014"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The end offset (45) is outside the text, which has 24 codepoint units.",
+    "The offsets fit if they are read as utf8_byte instead of codepoint (the declared unit)."
+   ]
+  },
+  {
+   "fixture_id": "acc-b03",
+   "category": "b",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E014",
+    "E015"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The offsets fit if they are read as codepoint instead of utf8_byte (the declared unit).",
+    "The start offset falls inside one character in utf8_byte units (inside a UTF-8 byte sequence or a UTF-16 surrogate pair)."
+   ]
+  },
+  {
+   "fixture_id": "acc-b04",
+   "category": "b",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E015"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": false,
+   "messages": [
+    "The end offset falls inside one character in utf8_byte units (inside a UTF-8 byte sequence or a UTF-16 surrogate pair)."
+   ]
+  },
+  {
+   "fixture_id": "acc-b05",
+   "category": "b",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-c01",
+   "category": "c",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after NFC normalisation, not the text as given.",
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after NFC normalisation, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-c02",
+   "category": "c",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after NFC normalisation, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-c03",
+   "category": "c",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after NFC normalisation, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-c04",
+   "category": "c",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E001",
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The span text matches the text only after NFC normalisation, and at other offsets.",
+    "The end offset (43) is outside the text, which has 42 codepoint units."
+   ]
+  },
+  {
+   "fixture_id": "acc-c05",
+   "category": "c",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit, but the span text differs from the text in its normalisation (NFC normalisation)."
+   ]
+  },
+  {
+   "fixture_id": "acc-d01",
+   "category": "d",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after NFKC normalisation, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-d02",
+   "category": "d",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E001",
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after NFKC normalisation, not the text as given.",
+    "The end offset (38) is outside the text, which has 35 codepoint units.",
+    "The offsets fit the text after NFKC normalisation, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-d03",
+   "category": "d",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-d04",
+   "category": "d",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E001",
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after NFKC normalisation, not the text as given.",
+    "The end offset (37) is outside the text, which has 36 codepoint units.",
+    "The offsets fit the text after NFKC normalisation, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-d05",
+   "category": "d",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E001",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The end offset (39) is outside the text, which has 36 codepoint units.",
+    "The offsets fit the text after NFKC normalisation, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-e01",
+   "category": "e",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E004"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span ends inside a grapheme cluster, for example between a letter and its haraka, shadda or combining hamza."
+   ]
+  },
+  {
+   "fixture_id": "acc-e02",
+   "category": "e",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E004"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span starts inside a grapheme cluster, for example between a letter and its haraka, shadda or combining hamza."
+   ]
+  },
+  {
+   "fixture_id": "acc-e03",
+   "category": "e",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E004"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span ends inside a grapheme cluster, for example between a letter and its haraka, shadda or combining hamza."
+   ]
+  },
+  {
+   "fixture_id": "acc-e04",
+   "category": "e",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-e05",
+   "category": "e",
+   "valid": false,
+   "format": "doccano",
+   "flagged": [
+    "E004"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span ends inside a grapheme cluster, for example between a letter and its haraka, shadda or combining hamza."
+   ]
+  },
+  {
+   "fixture_id": "acc-f01",
+   "category": "f",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E001",
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The span text matches the text only after tatweel removal, and at other offsets.",
+    "The end offset (42) is outside the text, which has 36 codepoint units."
+   ]
+  },
+  {
+   "fixture_id": "acc-f02",
+   "category": "f",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after tatweel removal, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-f03",
+   "category": "f",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after tatweel removal, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-f04",
+   "category": "f",
+   "valid": false,
+   "format": "label_studio",
+   "flagged": [
+    "E003",
+    "E011"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit the text after tatweel removal, not the text as given."
+   ]
+  },
+  {
+   "fixture_id": "acc-f05",
+   "category": "f",
+   "valid": false,
+   "format": "spacy",
+   "flagged": [
+    "E001"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The end offset (25) is outside the text, which has 22 codepoint units."
+   ]
+  },
+  {
+   "fixture_id": "acc-g01",
+   "category": "g",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E012"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span ends with an invisible control character (U+200F)."
+   ]
+  },
+  {
+   "fixture_id": "acc-g02",
+   "category": "g",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E004",
+    "E012"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span starts inside a grapheme cluster, for example between a letter and its haraka, shadda or combining hamza.",
+    "The span starts with an invisible control character (U+200C)."
+   ]
+  },
+  {
+   "fixture_id": "acc-g03",
+   "category": "g",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E012"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span starts with an invisible control character (U+061C)."
+   ]
+  },
+  {
+   "fixture_id": "acc-g04",
+   "category": "g",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-g05",
+   "category": "g",
+   "valid": false,
+   "format": "doccano",
+   "flagged": [
+    "E012"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span starts with an invisible control character (U+200F)."
+   ]
+  },
+  {
+   "fixture_id": "acc-h01",
+   "category": "h",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E008"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "clitic_policy is exclude, but the span starts with a conjunction or preposition attached to the name."
+   ]
+  },
+  {
+   "fixture_id": "acc-h02",
+   "category": "h",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E008"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "clitic_policy is include, but the span leaves out the proclitic attached to the start of the word."
+   ]
+  },
+  {
+   "fixture_id": "acc-h03",
+   "category": "h",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-h04",
+   "category": "h",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-h05",
+   "category": "h",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-h06",
+   "category": "h",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E007"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The span starts inside a word."
+   ]
+  },
+  {
+   "fixture_id": "acc-h07",
+   "category": "h",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-i01",
+   "category": "i",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E020"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The record does not follow the input contract at tokens[0]: must be an object.",
+    "The record does not follow the input contract at tokens[1]: must be an object.",
+    "The record does not follow the input contract at tokens[2]: must be an object.",
+    "The record does not follow the input contract at tokens[3]: must be an object.",
+    "The record does not follow the input contract at tokens[4]: must be an object.",
+    "The record does not follow the input contract at tokens[5]: must be an object."
+   ]
+  },
+  {
+   "fixture_id": "acc-i02",
+   "category": "i",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E020"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The record does not follow the input contract at tokens[0]: must be an object.",
+    "The record does not follow the input contract at tokens[1]: must be an object.",
+    "The record does not follow the input contract at tokens[2]: must be an object.",
+    "The record does not follow the input contract at tokens[3]: must be an object.",
+    "The record does not follow the input contract at tokens[4]: must be an object."
+   ]
+  },
+  {
+   "fixture_id": "acc-i03",
+   "category": "i",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E020"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The record does not follow the input contract at tokens[0]: must be an object.",
+    "The record does not follow the input contract at tokens[1]: must be an object.",
+    "The record does not follow the input contract at tokens[2]: must be an object.",
+    "The record does not follow the input contract at tokens[3]: must be an object.",
+    "The record does not follow the input contract at tokens[4]: must be an object.",
+    "The record does not follow the input contract at tokens[5]: must be an object."
+   ]
+  },
+  {
+   "fixture_id": "acc-i04",
+   "category": "i",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [
+    "E020"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The record does not follow the input contract at tokens[0]: must be an object.",
+    "The record does not follow the input contract at tokens[1]: must be an object.",
+    "The record does not follow the input contract at tokens[2]: must be an object.",
+    "The record does not follow the input contract at tokens[3]: must be an object.",
+    "The record does not follow the input contract at tokens[4]: must be an object.",
+    "The record does not follow the input contract at tokens[5]: must be an object."
+   ]
+  },
+  {
+   "fixture_id": "acc-i05",
+   "category": "i",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E020"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The record does not follow the input contract at tokens[0]: must be an object.",
+    "The record does not follow the input contract at tokens[1]: must be an object.",
+    "The record does not follow the input contract at tokens[2]: must be an object.",
+    "The record does not follow the input contract at tokens[3]: must be an object.",
+    "The record does not follow the input contract at tokens[4]: must be an object.",
+    "The record does not follow the input contract at tokens[5]: must be an object.",
+    "The record does not follow the input contract at tokens[6]: must be an object.",
+    "The record does not follow the input contract at tokens[7]: must be an object."
+   ]
+  },
+  {
+   "fixture_id": "acc-j01",
+   "category": "j",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E005"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 crosses span 0: they overlap but neither contains the other."
+   ]
+  },
+  {
+   "fixture_id": "acc-j02",
+   "category": "j",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E005"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 crosses span 0: they overlap but neither contains the other."
+   ]
+  },
+  {
+   "fixture_id": "acc-j03",
+   "category": "j",
+   "valid": false,
+   "format": "doccano",
+   "flagged": [
+    "E005"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 crosses span 0: they overlap but neither contains the other."
+   ]
+  },
+  {
+   "fixture_id": "acc-j04",
+   "category": "j",
+   "valid": false,
+   "format": "label_studio",
+   "flagged": [
+    "E005"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 crosses span 0: they overlap but neither contains the other."
+   ]
+  },
+  {
+   "fixture_id": "acc-j05",
+   "category": "j",
+   "valid": false,
+   "format": "spacy",
+   "flagged": [
+    "E005"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 crosses span 0: they overlap but neither contains the other."
+   ]
+  },
+  {
+   "fixture_id": "acc-k01",
+   "category": "k",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E006"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 lies inside span 0, and nested_policy is forbid."
+   ]
+  },
+  {
+   "fixture_id": "acc-k02",
+   "category": "k",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-k03",
+   "category": "k",
+   "valid": false,
+   "format": "doccano",
+   "flagged": [
+    "E006"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 lies inside span 0, and nested_policy is forbid."
+   ]
+  },
+  {
+   "fixture_id": "acc-k04",
+   "category": "k",
+   "valid": true,
+   "format": "label_studio",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-k05",
+   "category": "k",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E006"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Span 1 lies inside span 0, and nested_policy is forbid."
+   ]
+  },
+  {
+   "fixture_id": "acc-l01",
+   "category": "l",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E002"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span has zero length (start equals end)."
+   ]
+  },
+  {
+   "fixture_id": "acc-l02",
+   "category": "l",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E002"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span is reversed: the start offset is after the end offset."
+   ]
+  },
+  {
+   "fixture_id": "acc-l03",
+   "category": "l",
+   "valid": false,
+   "format": "doccano",
+   "flagged": [
+    "E002"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span has zero length (start equals end)."
+   ]
+  },
+  {
+   "fixture_id": "acc-l04",
+   "category": "l",
+   "valid": false,
+   "format": "label_studio",
+   "flagged": [
+    "E002"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span is reversed: the start offset is after the end offset."
+   ]
+  },
+  {
+   "fixture_id": "acc-l05",
+   "category": "l",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E002"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span has zero length (start equals end)."
+   ]
+  },
+  {
+   "fixture_id": "acc-m01",
+   "category": "m",
+   "valid": false,
+   "format": "conll",
+   "flagged": [
+    "E009"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Token 4: the tag I-LOC cannot follow O in IOB2."
+   ]
+  },
+  {
+   "fixture_id": "acc-m02",
+   "category": "m",
+   "valid": false,
+   "format": "conll",
+   "flagged": [
+    "E009"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Token 3: the tag I-LOC cannot follow B-PER in IOB2."
+   ]
+  },
+  {
+   "fixture_id": "acc-m03",
+   "category": "m",
+   "valid": false,
+   "format": "conll",
+   "flagged": [
+    "E009"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Token 3: the tag L-ORG cannot follow O in BILUO."
+   ]
+  },
+  {
+   "fixture_id": "acc-m04",
+   "category": "m",
+   "valid": false,
+   "format": "conll",
+   "flagged": [
+    "E009"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Token 3: the entity opened by B-PER is not closed before O in BILUO."
+   ]
+  },
+  {
+   "fixture_id": "acc-m05",
+   "category": "m",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E020"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The record does not follow the input contract at tokens[0]: must be an object.",
+    "The record does not follow the input contract at tokens[1]: must be an object.",
+    "The record does not follow the input contract at tokens[2]: must be an object.",
+    "The record does not follow the input contract at tokens[3]: must be an object.",
+    "The record does not follow the input contract at tokens[4]: must be an object.",
+    "The record does not follow the input contract at tokens[5]: must be an object."
+   ]
+  },
+  {
+   "fixture_id": "acc-m06",
+   "category": "m",
+   "valid": false,
+   "format": "conll",
+   "flagged": [
+    "E009"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "Token 2: the tag U-LOC uses a prefix that IOB2 does not have."
+   ]
+  },
+  {
+   "fixture_id": "acc-n01",
+   "category": "n",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E013"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if each CRLF line break is counted as one character."
+   ]
+  },
+  {
+   "fixture_id": "acc-n02",
+   "category": "n",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E013"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if each CRLF line break is counted as one character.",
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if each CRLF line break is counted as one character."
+   ]
+  },
+  {
+   "fixture_id": "acc-n03",
+   "category": "n",
+   "valid": false,
+   "format": "doccano",
+   "flagged": [
+    "E001",
+    "E013"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The end offset (37) is outside the text, which has 36 codepoint units.",
+    "The offsets fit if each LF line break is counted as two characters (CRLF)."
+   ]
+  },
+  {
+   "fixture_id": "acc-n04",
+   "category": "n",
+   "valid": false,
+   "format": "label_studio",
+   "flagged": [
+    "E003",
+    "E013"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if each LF line break is counted as two characters (CRLF)."
+   ]
+  },
+  {
+   "fixture_id": "acc-n05",
+   "category": "n",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-o01",
+   "category": "o",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003",
+    "E018"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The text starts with U+FEFF (a byte order mark kept as a character).",
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if the U+FEFF at the start of the text is not counted.",
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if the U+FEFF at the start of the text is not counted."
+   ]
+  },
+  {
+   "fixture_id": "acc-o02",
+   "category": "o",
+   "valid": false,
+   "format": "doccano",
+   "flagged": [
+    "E018"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The text starts with U+FEFF (a byte order mark kept as a character).",
+    "The offsets fit if the U+FEFF at the start of the text is not counted."
+   ]
+  },
+  {
+   "fixture_id": "acc-o03",
+   "category": "o",
+   "valid": false,
+   "format": "conll",
+   "flagged": [
+    "E018"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The file starts with a UTF-8 byte order mark (EF BB BF)."
+   ]
+  },
+  {
+   "fixture_id": "acc-o04",
+   "category": "o",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E012",
+    "E018"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The text starts with U+FEFF (a byte order mark kept as a character).",
+    "The span starts with an invisible control character (U+FEFF)."
+   ]
+  },
+  {
+   "fixture_id": "acc-o05",
+   "category": "o",
+   "valid": false,
+   "format": "label_studio",
+   "flagged": [
+    "E003",
+    "E018"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The text starts with U+FEFF (a byte order mark kept as a character).",
+    "The span text does not match the text between the offsets.",
+    "The offsets fit if the U+FEFF at the start of the text is not counted."
+   ]
+  },
+  {
+   "fixture_id": "acc-p01",
+   "category": "p",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-p02",
+   "category": "p",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-p03",
+   "category": "p",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-p04",
+   "category": "p",
+   "valid": false,
+   "format": "label_studio",
+   "flagged": [
+    "E003"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-p05",
+   "category": "p",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-q01",
+   "category": "q",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [
+    "W102"
+   ],
+   "pass": false,
+   "pass_readme_rule": true,
+   "primary_code": false,
+   "messages": [
+    "The span ends with punctuation (U+060C)."
+   ]
+  },
+  {
+   "fixture_id": "acc-q02",
+   "category": "q",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-q03",
+   "category": "q",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-q04",
+   "category": "q",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [
+    "W102"
+   ],
+   "pass": false,
+   "pass_readme_rule": true,
+   "primary_code": false,
+   "messages": [
+    "The span ends with punctuation (U+061F)."
+   ]
+  },
+  {
+   "fixture_id": "acc-q05",
+   "category": "q",
+   "valid": true,
+   "format": "doccano",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-r01",
+   "category": "r",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-r02",
+   "category": "r",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E003"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": false,
+   "messages": [
+    "The span text does not match the text between the offsets."
+   ]
+  },
+  {
+   "fixture_id": "acc-r03",
+   "category": "r",
+   "valid": false,
+   "format": "canonical",
+   "flagged": [
+    "E008"
+   ],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": false,
+   "messages": [
+    "clitic_policy is include, but the span leaves out the proclitic attached to the start of the word."
+   ]
+  },
+  {
+   "fixture_id": "acc-r04",
+   "category": "r",
+   "valid": true,
+   "format": "spacy",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-r05",
+   "category": "r",
+   "valid": true,
+   "format": "label_studio",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-v01",
+   "category": "v",
+   "valid": true,
+   "format": "spacy",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-v02",
+   "category": "v",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-v03",
+   "category": "v",
+   "valid": true,
+   "format": "conll",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-v04",
+   "category": "v",
+   "valid": true,
+   "format": "conll",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-v05",
+   "category": "v",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [
+    "E020"
+   ],
+   "pass": false,
+   "pass_readme_rule": false,
+   "primary_code": false,
+   "messages": [
+    "The record does not follow the input contract at tokens[0]: must be an object.",
+    "The record does not follow the input contract at tokens[1]: must be an object.",
+    "The record does not follow the input contract at tokens[2]: must be an object.",
+    "The record does not follow the input contract at tokens[3]: must be an object.",
+    "The record does not follow the input contract at tokens[4]: must be an object.",
+    "The record does not follow the input contract at tokens[5]: must be an object.",
+    "The record does not follow the input contract at tokens[6]: must be an object."
+   ]
+  },
+  {
+   "fixture_id": "acc-v06",
+   "category": "v",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  },
+  {
+   "fixture_id": "acc-v07",
+   "category": "v",
+   "valid": true,
+   "format": "canonical",
+   "flagged": [],
+   "pass": true,
+   "pass_readme_rule": true,
+   "primary_code": true,
+   "messages": []
+  }
+ ]
+}

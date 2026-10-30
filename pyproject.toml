@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arabic-ner-validator"
+dynamic = ["version"]
+description = "Check Arabic named-entity annotations for offset-unit mix-ups, normalisation drift (NFC, NFKC, tatweel, line breaks, byte order marks), grapheme and clitic boundary errors, overlaps and BIO/BIOES/BILUO tag errors. By Bayanat Labs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Bayanat Labs" }]
+dependencies = ["regex>=2022.1.18"]
+keywords = ["arabic", "ner", "named-entity-recognition", "annotation", "offsets", "unicode", "bio", "biluo", "data-quality"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Natural Language :: Arabic",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "hypothesis>=6", "jsonschema>=4.18", "spacy>=3.7,<4", "seqeval>=1.2"]
+
+[project.urls]
+Homepage = "https://github.com/Bayanat-Labs/arabic-ner-validator"
+Repository = "https://github.com/Bayanat-Labs/arabic-ner-validator"
+Issues = "https://github.com/Bayanat-Labs/arabic-ner-validator/issues"
+"Web app" = "https://huggingface.co/spaces/Bayanat-Labs/arabic-ner-offset-validator"
+"Test cases" = "https://huggingface.co/datasets/Bayanat-Labs/arabic-ner-offset-fixtures"
+
+[project.scripts]
+arabic-ner-validator = "arabic_ner_validator.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["arabic_ner_validator", "arabic_ner_validator.io"]
+
+[tool.setuptools.package-data]
+arabic_ner_validator = ["data/*.json"]
+
+[tool.setuptools.dynamic]
+version = { attr = "arabic_ner_validator.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

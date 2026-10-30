@@ -1,0 +1,4 @@
+{"id": "r1", "text": "وصلت الرسالة 😀 من مدينة الرياض صباح اليوم", "offset_unit": "codepoint", "spans": [{"start": 25, "end": 31, "label": "LOC", "text": "الرياض"}]}
+{"id": "r2", "text": "سأل الباحث عن تاريخ القاهرة", "offset_unit": "codepoint", "spans": [{"start": 20, "end": 27, "label": "LOC", "text": "القاهرة"}]}
+{"id": "r3", "text": "زرنا جدة والرياض", "offset_unit": "codepoint", "clitic_policy": "exclude", "spans": [{"start": 5, "end": 8, "label": "LOC", "text": "جدة"}, {"start": 9, "end": 16, "label": "LOC", "text": "والرياض"}]}
+{"id": "r4", "text": "التقى وفد من البنك الدولي بممثلين عن الاتحاد الأفريقي في أديس أبابا", "offset_unit": "codepoint", "label_set": ["PER", "LOC", "ORG"], "clitic_policy": "exclude", "spans": [{"start": 13, "end": 25, "label": "ORG", "text": "البنك الدولي"}, {"start": 37, "end": 53, "label": "ORG", "text": "الاتحاد الأفريقي"}, {"start": 57, "end": 67, "label": "LOC", "text": "أديس أبابا"}]}

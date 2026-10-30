@@ -1,0 +1,162 @@
+[
+ {
+  "probe_id": "p01",
+  "feature": "plain Arabic",
+  "text": "زار الوفد مدينة الرياض",
+  "target": "الرياض",
+  "start_codepoint": 16,
+  "end_codepoint": 22
+ },
+ {
+  "probe_id": "p02",
+  "feature": "harakat",
+  "text": "سافرَ الوفدُ إلى دِمَشْقَ أمسِ",
+  "target": "دِمَشْقَ",
+  "start_codepoint": 17,
+  "end_codepoint": 25
+ },
+ {
+  "probe_id": "p03",
+  "feature": "tatweel",
+  "text": "تقع مدينة الريـــاض في الوسط",
+  "target": "الريـــاض",
+  "start_codepoint": 10,
+  "end_codepoint": 19
+ },
+ {
+  "probe_id": "p04",
+  "feature": "astral emoji before the span",
+  "text": "وصلنا 😀 إلى جدة",
+  "target": "جدة",
+  "start_codepoint": 12,
+  "end_codepoint": 15
+ },
+ {
+  "probe_id": "p05",
+  "feature": "emoji ZWJ sequence before the span",
+  "text": "👨‍👩‍👧 عائلة من القاهرة",
+  "target": "القاهرة",
+  "start_codepoint": 15,
+  "end_codepoint": 22
+ },
+ {
+  "probe_id": "p06",
+  "feature": "ZWNJ before the span",
+  "text": "قال‌ الدليل إن صلالة جميلة",
+  "target": "صلالة",
+  "start_codepoint": 15,
+  "end_codepoint": 20
+ },
+ {
+  "probe_id": "p07",
+  "feature": "RLM before the span",
+  "text": "انتقل المقر إلى ‏الرياض",
+  "target": "الرياض",
+  "start_codepoint": 17,
+  "end_codepoint": 23
+ },
+ {
+  "probe_id": "p08",
+  "feature": "ALM before the span",
+  "text": "سافر الفريق إلى ؜تونس",
+  "target": "تونس",
+  "start_codepoint": 17,
+  "end_codepoint": 21
+ },
+ {
+  "probe_id": "p09",
+  "feature": "CRLF line break before the span",
+  "text": "سطر أول\r\nزار الوفد عمّان",
+  "target": "عمّان",
+  "start_codepoint": 19,
+  "end_codepoint": 24
+ },
+ {
+  "probe_id": "p10",
+  "feature": "lam-alef ligature U+FEFB before the span",
+  "text": "ﻻ يزال المتحف في الشارقة",
+  "target": "الشارقة",
+  "start_codepoint": 17,
+  "end_codepoint": 24
+ },
+ {
+  "probe_id": "p11",
+  "feature": "ligature U+FDF2 before the span",
+  "text": "كتب الخطاط ﷲ في الدوحة",
+  "target": "الدوحة",
+  "start_codepoint": 16,
+  "end_codepoint": 22
+ },
+ {
+  "probe_id": "p12",
+  "feature": "alef + combining hamza (U+0627 U+0654) before the span",
+  "text": "سأل الباحث عن القاهرة",
+  "target": "القاهرة",
+  "start_codepoint": 15,
+  "end_codepoint": 22
+ },
+ {
+  "probe_id": "p13",
+  "feature": "Arabic-Indic digits as the span",
+  "text": "افتتح المعرض عام ٢٠٢٦ في مسقط",
+  "target": "٢٠٢٦",
+  "start_codepoint": 17,
+  "end_codepoint": 21
+ },
+ {
+  "probe_id": "p14",
+  "feature": "English name inside Arabic text",
+  "text": "أعلنت شركة Microsoft عن مركز في دبي",
+  "target": "Microsoft",
+  "start_codepoint": 11,
+  "end_codepoint": 20
+ },
+ {
+  "probe_id": "p15",
+  "feature": "LRM marks around a Latin name",
+  "text": "تعاونت الجامعة مع ‎MIT‎ في مشروع",
+  "target": "MIT",
+  "start_codepoint": 19,
+  "end_codepoint": 22
+ },
+ {
+  "probe_id": "p16",
+  "feature": "U+FEFF at the start of the text",
+  "text": "﻿يزور السياح الأقصر",
+  "target": "الأقصر",
+  "start_codepoint": 13,
+  "end_codepoint": 19
+ },
+ {
+  "probe_id": "p17",
+  "feature": "shadda before fatha (not in canonical order)",
+  "text": "زار الوفد مكَّة",
+  "target": "مكَّة",
+  "start_codepoint": 10,
+  "end_codepoint": 15
+ },
+ {
+  "probe_id": "p18",
+  "feature": "conjunction attached to the name",
+  "text": "زرنا جدة والرياض",
+  "target": "الرياض",
+  "start_codepoint": 10,
+  "end_codepoint": 16
+ },
+ {
+  "probe_id": "p19",
+  "feature": "Arabic comma after the name",
+  "text": "زرنا الرياض، ثم جدة",
+  "target": "الرياض",
+  "start_codepoint": 5,
+  "end_codepoint": 11
+ },
+ {
+  "probe_id": "p20",
+  "feature": "emoji, CRLF and harakat together",
+  "text": "🌍 مرحبًا\r\nمن مَكَّةَ",
+  "target": "مَكَّةَ",
+  "start_codepoint": 13,
+  "end_codepoint": 20
+ }
+]

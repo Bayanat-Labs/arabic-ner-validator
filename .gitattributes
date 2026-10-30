@@ -1,0 +1,2 @@
+# Fixtures and probes are compared byte for byte, and some contain carriage returns on purpose.
+* -text
